@@ -1,0 +1,49 @@
+{
+  "best_model": "logistic_regression",
+  "models": {
+    "logistic_regression": {
+      "roc_auc": 0.783,
+      "pr_auc_dropout": 0.5129
+    },
+    "random_forest": {
+      "roc_auc": 0.7656,
+      "pr_auc_dropout": 0.4715
+    }
+  },
+  "intervention_budget": [
+    {
+      "k_frac": 0.05,
+      "n_contacted": 70,
+      "precision": 0.657,
+      "recall": 0.146
+    },
+    {
+      "k_frac": 0.1,
+      "n_contacted": 140,
+      "precision": 0.571,
+      "recall": 0.253
+    },
+    {
+      "k_frac": 0.15,
+      "n_contacted": 210,
+      "precision": 0.552,
+      "recall": 0.367
+    },
+    {
+      "k_frac": 0.2,
+      "n_contacted": 280,
+      "precision": 0.514,
+      "recall": 0.456
+    },
+    {
+      "k_frac": 0.3,
+      "n_contacted": 420,
+      "precision": 0.45,
+      "recall": 0.598
+    }
+  ],
+  "fairness_dropout_recall": {
+    "continuing_gen": 0.392,
+    "first_gen": 0.557
+  }
+}
